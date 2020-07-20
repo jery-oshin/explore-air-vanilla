@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Remote Control Drone</title>
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./tel-input/build/css/intlTelInput.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
@@ -145,8 +146,17 @@
 
                             </div>
                         </div>
-                        <div class="input-group mb-3">
-                            <div class="input-group-prepend">
+                        <div class="input-group mb-3 d-flex">
+                            <input class="col-sm-12" type="tel" id="phone">
+ 
+                            <script src="./tel-input/build/js/intlTelInput.js"></script>
+                            <script>
+                            var input = document.querySelector("#phone");
+                            window.intlTelInput(input, {
+                                // any initialisation options go here
+                            });
+                            </script>
+                            <!-- <div class="input-group-prepend">
                               <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
                               <div class="dropdown-menu">
                                 <a class="dropdown-item" href="#">Action</a>
@@ -156,7 +166,7 @@
                                 <a class="dropdown-item" href="#">Separated link</a>
                               </div>
                             </div>
-                            <input id="phone-number" type="text" class="form-control" aria-label="Text input with dropdown button" pattern='^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$' placeholder='(829) 312 9631'>
+                            <input id="phone-number" type="text" class="form-control" aria-label="Text input with dropdown button" pattern='^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$' placeholder='(829) 312 9631'> -->
                         </div>
                         <small class="text-danger phone-number" id="error-text"></small>
 
