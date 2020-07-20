@@ -1,0 +1,207 @@
+/*HEADER*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.logo{
+    width: 150px;
+}
+
+.logo-container{
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+}
+
+/* PRODUCT CONTAINER*/
+.product-container{
+    display: flex;
+    justify-content: center;
+    min-height: 300px;
+}
+.product-image{
+    width: 80%;
+    object-fit: contain;
+    min-height: 200px;
+}
+.product-description {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+
+/*SPECIAL OFFER*/
+.special-offer {
+    text-align: center;
+}
+.special-offer h3{
+    font-weight: bold;
+    color: #25aae1;
+
+}
+.free-shipping p{
+    color: red;
+    font-weight: bold;
+}
+form {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+/*FIRST STEPS*/
+
+    /* DISCOUNT */
+.first-steps{
+    padding: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(231, 231, 231);
+    border-radius: 10px;
+}
+
+.discount{
+    width: 100%;
+}
+
+.off-card{
+    border-style: dotted;
+    border-color: red;
+    border-width: 1px;
+    border-radius: 15px;
+}
+
+.red-card{
+    margin: 5px;
+    padding: 15px;
+    background: red;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+
+}
+
+/*CHOOSE*/
+
+.choose{
+    display: flex;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 5px;
+    border-width: 1px;
+    border-color: #b9bdc0;
+}
+
+
+.choose-description{
+    display: flex;
+    width: 100%;
+}
+
+.choose-description-title{
+    margin-left: 10px;
+
+}
+
+.choose-description-price{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.choose-description-price p {
+    font-weight: bold;
+}
+
+.choose-description p{
+    margin: 0;
+    
+}
+
+.step{
+    margin-top: 40px;
+}
+
+/*LAST STEPS*/
+.last-steps{
+    padding: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(231, 231, 231);
+    border-radius: 10px;
+    
+}
+
+.second-logo{
+    width: 80px;
+}
+
+.product-info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-info img{
+    
+    object-fit: contain;
+    width: 80px;
+    height: auto;
+}
+
+.select {
+    padding: 5px;
+    background: transparent;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #ced4da;
+    border-width: 1px;
+    
+}
+
+.type-card {
+    display: flex;
+}
+
+.payment-card{
+    display: flex;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 10px 20px;
+    border-width: 1px;
+    border-color: #b9bdc0;
+}
+
+.payment-method-description {
+    margin-left: 20px;
+}
+
+.type-cards img{
+    width: 40px;
+}
+
+.iso-card img{
+    width: 25px;
+}
+
+.payment-method-description .paypal-logo {
+    width: 90px;
+}
+
+.button {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+.hidden-step{
+    display: none;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: red;
+}
