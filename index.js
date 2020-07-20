@@ -64,7 +64,7 @@ const inputs = {
     firstName : document.querySelector('#first-name'),
     lastName: document.querySelector('#last-name'),
     email: document.querySelector('#email'),
-    phoneNumber: document.querySelector('#phone-number'),
+    phoneNumber: document.querySelector('#phone'),
 
     //Step Three
     townCity: document.querySelector('#town-city'),
@@ -94,6 +94,7 @@ class ValidateInput {
                     // console.log(input)
                     input.classList.add('is-invalid');
                     this.showErrorMessage(input.id, input.placeholder);
+
 
                 } else {
                     input.classList.remove('is-invalid')
