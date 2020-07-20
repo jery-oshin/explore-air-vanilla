@@ -74,6 +74,7 @@ form {
 }
 
 .red-card{
+    height: auto;
     margin: 5px;
     padding: 15px;
     background: red;
@@ -83,6 +84,27 @@ form {
     font-size: 1.5rem;
     font-weight: bold;
 
+}
+
+/*COUNTER*/
+.counter {
+    margin-top: 4%;
+    text-align: center;
+}
+.counter p {
+    padding: 0;
+    margin: 0;
+}
+.counter .important {
+    font-weight: bold;
+    color: red;
+}
+
+.counter .offer-valid {
+    font-weight: bold;
+}
+.counter-description {
+    font-size: 1.4rem;
 }
 
 /*CHOOSE*/
@@ -204,4 +226,8 @@ form {
 .old-price {
     text-decoration: line-through;
     color: red;
+}
+
+.card-security {
+    display: flex;
 }

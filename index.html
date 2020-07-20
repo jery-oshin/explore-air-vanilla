@@ -46,10 +46,16 @@
         <form class="row" action="">
             <div class="col-sm-12 col-md-6 mx-1 first-steps">
                 <div class="col-sm-12 discount">
-                    <div class="off-card">
+                    <div class="off-card col-sm-12 p-0">
                         <div class="red-card">
                             50% OFF
                         </div>
+                    </div>
+                    <div class="counter col-sm-12">
+                        <p class="counter-description"> Your  <span class="important"> 50% Discount </span> has been applied <span class="important"> IMPORTANT </span> ! <span class="offer-valid"> Offer Valid For </span> <span class="minutes important"> 0 </span>: <span class="seconds important">00</span>  </p> 
+                        
+                        <p>Do not browse away from this page!</p>
+                        <p>Free Delivery Available Today!</p>
                         
                     </div>
                 </div>
@@ -118,14 +124,26 @@
                     <h5>Step #2: Contact Information</h5>
                     <div class="contact-information">
                         <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="First Name" aria-label="first-name" id="first-name">
+                            <div class="col-12 p-0">
+                                <input type="text" class="form-control" placeholder="First Name" aria-label="first-name" id="first-name">
+                                <small class="text-danger phone-number first-name" id="error-text"></small>
+                            </div>
+                            
                         </div>
                         <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Last Name" aria-label="last-name">
+                            <div class="col-12 p-0">
+                                <input type="text" class="form-control" placeholder="Last Name" aria-label="last-name" id="last-name">
+                                <small class="text-danger phone-number last-name" id="error-text"></small>
+
+                            </div>
                         </div>
                         <div class="input-group mb-3">
-                            <input type="text" 
-                            id="email"class="form-control" placeholder="Email" aria-label="email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}">
+                            <div class="col-12 p-0">
+                                <input type="text" 
+                                id="email"class="form-control" placeholder="Email" aria-label="email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" pattern="/^$|\s+/">
+                                <small class="text-danger phone-number email" id="error-text"></small>
+
+                            </div>
                         </div>
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
@@ -139,7 +157,9 @@
                               </div>
                             </div>
                             <input id="phone-number" type="text" class="form-control" aria-label="Text input with dropdown button" pattern='^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$' placeholder='(829) 312 9631'>
-                          </div>
+                        </div>
+                        <small class="text-danger phone-number" id="error-text"></small>
+
                     </div>
                 </di>
             </div>
@@ -163,13 +183,24 @@
                         <option value="pr">puerto rico</option>
                     </select>
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Town/City" aria-label="town-city">
+                        <div class="col-12 p-0">
+                            <input type="text" class="form-control" placeholder="Town/City" aria-label="town-city" id="town-city">
+                            <small class="text-danger town-city" id="error-text"></small>
+                        </div>
                     </div>
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Street & House Number" aria-label="address">
+                        <div class="col-12 p-0">
+                            <input type="text" class="form-control" placeholder="Street & House Number" aria-label="address" id="street-house">
+                            <small class="text-danger street-house" id="error-text"></small>
+                        </div>
                     </div>
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Zip/Postal Code" aria-label="zip-postal-code" pattern="^\d+$">
+                        <div class="col-12 p-0">
+                            <input type="text" class="form-control" placeholder="Zip/Postal Code" aria-label="zip-postal-code" pattern="^\d+$" id="zip-code">
+                            <small class="text-danger zip-code" id="error-text"></small>
+
+                        </div>
+
                     </div>
                 </div>
                 <div class="col-sm-12 step p-0 step-4">
@@ -178,7 +209,7 @@
                         
                         <label for="credit-card" class="payment-card">
     
-                            <input type="radio" id="credit-card" name="payment-method">
+                            <input checked type="radio" id="credit-card" name="payment-method">
     
                             <div class="payment-method-description">
                                 <div class="iso-card">
@@ -206,13 +237,27 @@
                     <h5>Step#5: Payment Details</h5>
                     <div class="payment-datails">
                         <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Card Number" aria-label="card-number" pattern="^(?:4[0-9]{12}(?:[0-9]{3})?)$">
+                            <div class="col-12 p-0">
+
+                                <input type="text" class="form-control" placeholder="Card Number" aria-label="card-number" pattern="^(?:4[0-9]{12}(?:[0-9]{3})?)$" id="card-number">
+                                <small class="text-danger card-number" id="error-text"></small>
+                            </div>
+
                         </div>
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="MM / YYYY" aria-label="mm-yyyy" pattern="(0|1)[0-9]\/[0-9]{2}">
-                        </div>
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Security Code" aria-label="security-code">
+                        <div class="card-security">
+                            <div class="input-group mb-3">
+                                <div class="col-sm-11 p-0">
+                                    <input type="text" class="form-control" placeholder="MM / YYYY" aria-label="mm-yyyy" pattern="(0|1)[0-9]\/[0-9]{2}" id="card-date">
+                                    <small class="text-danger card-date" id="error-text"></small>
+
+                                </div>
+                            </div>
+                            <div class="input-group mb-3">
+                                <div class="col-sm-12 p-0">
+                                    <input type="text" class="form-control" placeholder="Security Code" aria-label="security-code" id="security-code">
+                                    <small class="text-danger security-code" id="error-text-security-code"></small>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
