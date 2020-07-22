@@ -119,6 +119,7 @@
                                 </div>
                             </div>
                         </label>
+                        <small class="text-danger radio-error-message"></small>
                     </div>
                 </div>
                 <di class="col-sm-12 step step-2">
@@ -152,8 +153,8 @@
                             <script src="./tel-input/build/js/intlTelInput.js"></script>
                             <script>
                             var input = document.querySelector("#phone");
+                            input.placeholder = 'Phone Number'
                             window.intlTelInput(input, {
-                                // any initialisation options go here
                             });
                             </script>
                             <!-- <div class="input-group-prepend">
@@ -244,7 +245,7 @@
                     </div>
                 </div>
                 <div class="col-sm-12 step p-0 step-5" id="step-5">
-                    <h5>Step#5: Payment Details</h5>
+                    <!-- <h5>Step#5: Payment Details</h5>
                     <div class="payment-datails">
                         <div class="input-group mb-3">
                             <div class="col-12 p-0">
@@ -269,7 +270,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <button id='submit' class="button btn btn-primary" type="submit">YES ! SEND ME MY EXPLORE AIR NOW</button>
             </div>

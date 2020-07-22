@@ -20,14 +20,19 @@
     top: 0;
     bottom: 0;
     right: 0;
-    padding: 1px; }
+    padding: 1px; 
+  }
   .iti__selected-flag {
     z-index: 1;
     position: relative;
     display: flex;
     align-items: center;
     height: 100%;
-    padding: 0 6px 0 8px; }
+    padding: 0 6px 0 8px; 
+    border-right-style: solid;
+    border-right-color: #999;
+    border-width: 1px;
+  }
   .iti__arrow {
     margin-left: 6px;
     width: 0;
@@ -37,7 +42,9 @@
     border-top: 4px solid #555; }
     .iti__arrow--up {
       border-top: none;
-      border-bottom: 4px solid #555; }
+      border-bottom: 4px solid #555;
+    }
+      
   .iti__country-list {
     position: absolute;
     z-index: 2;
